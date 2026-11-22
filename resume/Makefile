@@ -9,7 +9,7 @@ all: index.html resume-cn.html resume-en.html
 html: all
 
 index.html: $(HTML_DEPS_CN)
-	cat resume-cn.md | pandoc $(COMMON) --template=$(TEMPLATE) -V lang=zh-CN -M title="杨岸然简历" -H header.html -B banner-cn.html -A work-cn.html -A contacts-cn.html -A footnote-cn.html -o $@
+	cat resume-cn.md | pandoc $(COMMON) --template=$(TEMPLATE) -V lang=zh-CN -M title="杨岸然简历" -H header.html -B banner-cn.html -A contacts-cn.html -A work-cn.html -A footnote-cn.html -o $@
 
 # legacy URL that search engines indexed — same Chinese page
 resume-cn.html: index.html
