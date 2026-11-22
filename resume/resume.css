@@ -11,7 +11,7 @@
     --muted: #8a8a8a;
     --paper: #fbfbfb;
     --hairline: #e4e1db;
-    --measure: 1920px;
+    --measure: 1440px;
     --gutter: 4vw;
 }
 
@@ -200,60 +200,53 @@ blockquote em {
 }
 
 /* ------------------------------------------------------------
-   nav tabs
+   nav tabs — compact pill group
    ------------------------------------------------------------ */
 nav {
-    margin: 0.13in 0 0;
+    margin: 0.1in 0 0;
     display: flex;
     justify-content: center;
 }
 
 nav > div {
     display: flex;
-    width: min(var(--measure), 96vw);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: auto;
+    max-width: 96vw;
 }
 
 nav a {
-    flex: 1 1 0;
-    min-width: 0;
     white-space: nowrap;
     text-align: center;
-    line-height: 0.38in;
-    background-color: var(--paper);
-    vertical-align: bottom;
-    margin-left: 1px;
-    font-size: 12.5pt;
+    padding: 9px 30px;
+    border-radius: 999px;
+    background-color: rgba(251, 251, 251, 0.94);
     color: var(--ink-soft);
-    transition: background-color 0.15s ease, color 0.15s ease;
-}
-
-nav a:first-child {
-    margin-left: 0;
-    border-top-left-radius: 3px;
-}
-
-nav a:last-child {
-    border-top-right-radius: 3px;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.14);
+    transition: background-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
 }
 
 nav a:hover {
-    color: var(--accent);
+    color: var(--accent-deep);
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     text-decoration: none;
 }
 
 nav a.current {
-    line-height: 0.52in;
+    background-color: var(--accent);
+    color: var(--paper);
     font-weight: bold;
-    color: var(--accent);
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-    margin-left: 0;
-    border-left: 1px solid var(--paper);
-    border-right: 1px solid var(--paper);
+    box-shadow: 0 2px 8px rgba(166, 46, 32, 0.4);
 }
 
-nav a.current+a {
-    margin-left: 0;
+nav a.current:hover {
+    color: var(--paper);
+    background-color: var(--accent-deep);
 }
 
 body.sticky nav {
@@ -262,15 +255,10 @@ body.sticky nav {
     left: 0;
     right: 0;
     margin-top: 0;
+    padding: 8px 0;
     z-index: 2;
     background-color: var(--paper);
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.18);
-}
-
-body.sticky nav a.current {
-    background-color: var(--accent);
-    color: var(--paper);
-    line-height: 0.38in;
 }
 
 /* ------------------------------------------------------------
@@ -608,22 +596,20 @@ section.work .design > div {
         margin: 0.7em 1em;
     }
 
+    nav {
+        margin-top: 0.08in;
+    }
+
     nav > div {
-        width: 100%;
+        gap: 5px;
+        max-width: 98vw;
+        padding: 0 4px;
     }
 
     nav a {
-        font-size: 10.5pt;
-        line-height: 0.32in;
-        padding: 0 2px;
-    }
-
-    nav a.current {
-        line-height: 0.42in;
-    }
-
-    body.sticky nav a.current {
-        line-height: 0.32in;
+        font-size: 11.5px;
+        padding: 7px 10px;
+        letter-spacing: 0.02em;
     }
 
     /* keep the works panels on mobile, just scale them down */
