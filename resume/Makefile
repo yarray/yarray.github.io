@@ -1,24 +1,18 @@
-SRC = $(wildcard *.md)
+TEMPLATE = resume.html5
+COMMON = -s -t html5 --section-divs -f markdown+autolink_bare_uris -c resume.css
 
-PDFS=$(SRC:.md=.pdf)
-HTML=$(SRC:.md=.html)
-LATEX_TEMPLATE=./pandoc-templates/default.latex
-PANDOCARGS=--pdf-engine=xelatex -V fontsize=12pt
-COMMON_OPTIONS=--no-gravatar
+HTML_DEPS_CN = resume-cn.md $(TEMPLATE) header.html banner-cn.html work-cn.html contacts-cn.html footnote-cn.html
+HTML_DEPS_EN = resume.md $(TEMPLATE) header.html banner-en.html work-en.html contacts-en.html footnote-en.html
 
-all: $(PDFS) $(HTML)
+all: index.html resume-en.html
 
-pdf:   $(PDFS)
-html:  $(HTML)
+html: all
 
-%-cn.html: %-cn.md header.html banner-cn.html work-cn.html contacts-cn.html footnote-cn.html
-	cat $< | pandoc -t html5 --section-divs -V title:"" -H header.html -B banner-cn.html -A work-cn.html -A contacts-cn.html -A footnote-cn.html -c resume.css -o $@
+index.html: $(HTML_DEPS_CN)
+	cat resume-cn.md | pandoc $(COMMON) --template=$(TEMPLATE) -V lang=zh-CN -M title="杨岸然简历" -H header.html -B banner-cn.html -A work-cn.html -A contacts-cn.html -A footnote-cn.html -o $@
 
-%-cn.pdf:  %-cn.md $(LATEX_TEMPLATE) header.tex contacts-cn.tex footnote-cn.tex
-	cat contacts-cn.tex $< footnote-cn.tex | pandoc $(PANDOCARGS) --template=$(LATEX_TEMPLATE) -H header.tex -o $@
-
-%-cn-table.pdf:  %-cn-table.md $(LATEX_TEMPLATE) header.tex contacts-cn.tex
-	cat contacts-cn.tex $< | pandoc $(PANDOCARGS) --template=$(LATEX_TEMPLATE) -H header.tex -o $@
+resume-en.html: $(HTML_DEPS_EN)
+	cat resume.md | pandoc $(COMMON) --template=$(TEMPLATE) -V lang=en -M title="Anran Yang — Resume" -H header.html -B banner-en.html -A work-en.html -A contacts-en.html -A footnote-en.html -o $@
 
 ifeq ($(OS),Windows_NT)
   # on Windows
@@ -29,7 +23,4 @@ else
 endif
 
 clean:
-	$(RM) resume*.html resume*.pdf
-
-$(LATEX_TEMPLATE):
-	git submodule update --init
+	$(RM) index.html resume-en.html

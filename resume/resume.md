@@ -7,50 +7,65 @@ GitHub: https://github.com/yarray
 
 ## Education {#education}
 
-### ^2010.09-2016.12^ College of Electronic Science, National University of Defense Technology — Ph.D. in Information and Communication Engineering (A+ discipline)
+### ^2010.09-2016.12^
 
-### ^2014.10-2015.11^ University of Heidelberg, Germany — academic visit
+College of Electronic Science, National University of Defense Technology — Ph.D. in Information and Communication Engineering (A+ discipline)
 
-### ^2006.09-2010.07^ Peking University — B.S. in Geographical Information System
+### ^2014.10-2015.11^
 
+University of Heidelberg, Germany — academic visit
+
+### ^2006.09-2010.07^
+
+Peking University — B.S. in Geographical Information System\
 ~Outstanding Graduate, Merit Student, Guanghua Scholarship, GPA ranked 4th in major~
 
 ## Work Experience {#experience}
 
-### ^2022.11-present^ National University of Defense Technology, College of Electronic Science — Associate Research Fellow (tenured)
+### ^2022.11-present^
 
-### ^2020.07-present^ Tianjin Institute of Advanced Technology, Center for Intelligent Ubiquitous Sensing — Deputy Director
+National University of Defense Technology, College of Electronic Science — Associate Research Fellow (tenured)
 
+### ^2020.07-present^
+
+Tianjin Institute of Advanced Technology, Center for Intelligent Ubiquitous Sensing — Deputy Director\
 ~Built a 50+ R&D team from scratch; total project funding over CNY 31M~
 
-### ^2019.08-2022.11^ National University of Defense Technology, College of Electronic Science — Assistant Research Fellow
+### ^2019.08-2022.11^
 
-### ^2018.01-2019.08^ Academy of Military Science — Assistant Research Fellow
+National University of Defense Technology, College of Electronic Science — Assistant Research Fellow
 
-### ^2016.12-2018.01^ PLA Strategic Support Force — Assistant Research Fellow
+### ^2018.01-2019.08^
+
+Academy of Military Science — Assistant Research Fellow
+
+### ^2016.12-2018.01^
+
+PLA Strategic Support Force — Assistant Research Fellow
 
 <br>
 
 ## Selected Work {#mainwork}
 
-### ^2024-present^ LLMs and Spatio-temporal Intelligence
+### ^2024-present^
 
-**Studying the capabilities and applications of large language models in spatial cognition, trajectory prediction and related areas**
-Proposed an evaluation methodology for the spatial cognition of LLMs and developed a spatial-cognition benchmark question set; proposed multimodal agent construction techniques for spatial-cognition enhancement.
+**LLMs and Spatio-temporal Intelligence**\
+Studying the capabilities and applications of large language models in spatial cognition, trajectory prediction and related areas; proposed an evaluation methodology for the spatial cognition of LLMs and developed a spatial-cognition benchmark question set; proposed multimodal agent construction techniques for spatial-cognition enhancement.
 
-### ^2019-present^ HiGIS 2.0: High-Performance Geographic Information Platform — Lead
+### ^2019-present^
 
-**Leading the development of the new-generation high-performance GIS platform, fully supporting multiple large projects at the tens-of-millions-CNY scale**
-Designed the cloud-native platform architecture; designed the geographic information model for emerging spatio-temporal applications and the HiGIS core interface specification; developed a parallel-friendly high-performance vector data I/O library; developed high-performance 2D/3D analysis algorithms; organized the development of a family of software products covering standalone, distributed and other environments.
+**HiGIS 2.0: High-Performance Geographic Information Platform — Lead**\
+Leading the development of the new-generation high-performance GIS platform, fully supporting multiple large projects at the tens-of-millions-CNY scale; designed the cloud-native platform architecture, the geographic information model for emerging spatio-temporal applications and the HiGIS core interface specification; developed a parallel-friendly high-performance vector data I/O library and high-performance 2D/3D analysis algorithms; organized the development of a family of software products covering standalone, distributed and other environments.
 
-### ^2014-present^ Volunteered Geographic Information (VGI)
+### ^2014-present^
 
-**Studying the intrinsic mechanisms and information mining techniques of crowdsourced geographic information**
-Investigated community characteristics such as distribution and contribution inequality; studied contributor behavior including activity, contested editing and organizational mapping; researched crowdsourced street-view image/video processing; built efficient analysis tools and high-performance analytics for crowdsourced data.
+**Volunteered Geographic Information (VGI)**\
+Studying the intrinsic mechanisms and information mining techniques of crowdsourced geographic information: investigated community characteristics such as distribution and contribution inequality; studied contributor behavior including activity, contested editing and organizational mapping; researched crowdsourced street-view image/video processing; built efficient analysis tools and high-performance analytics for crowdsourced data.
 
-### ^2011-2016^ HiGIS 1.0: High-Performance Geographic Information Platform — Co-chief Architect
+### ^2011-2016^
 
-**One of the two chief architects of the platform**, responsible for technology selection and initial development of more than half of its modules. Supported by two phases of the National 863 Program with a combined budget of CNY 55M; National Science and Technology Progress Award, 2nd class (2020).
+**HiGIS 1.0: High-Performance Geographic Information Platform — Co-chief Architect**\
+One of the two chief architects of the platform, responsible for technology selection and initial development of more than half of its modules. Supported by two phases of the National 863 Program with a combined budget of CNY 55M; National Science and Technology Progress Award, 2nd class (2020).
 
 <br>
 
@@ -95,11 +110,11 @@ Investigated community characteristics such as distribution and contribution ine
 
 #### 1. 3D XX Computing and XX Visualization, **major engineering program**, **Principal Investigator**, 2024-2025, **CNY 21M+**
 
-  As the group lead, coordinated NUDT, Beihang University, the Chinese Academy of Sciences and Hunan University in project justification and implementation; research on 3D spatial environment analysis and visualization in high-fidelity environments.
+As the group lead, coordinated NUDT, Beihang University, the Chinese Academy of Sciences and Hunan University in project justification and implementation; research on 3D spatial environment analysis and visualization in high-fidelity environments.
 
 #### 2. Research on VGI Contributor Motivation Based on Contribution History, **NSFC Young Scientists Fund**, Principal Investigator, 2022-2024
 
-  Studied the behavioral patterns of VGI contributors.
+Studied the behavioral patterns of VGI contributors.
 
 #### Other projects (selected)
 
