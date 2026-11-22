@@ -204,52 +204,53 @@ blockquote em {
    ------------------------------------------------------------ */
 nav {
     margin: 0.13in 0 0;
+    font-size: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav > div {
-    display: flex;
-    width: min(var(--measure), 96vw);
+    max-width: min(var(--measure), 96vw);
+    text-align: center;
 }
 
 nav a {
-    flex: 1 1 0;
-    min-width: 0;
-    white-space: nowrap;
+    display: inline-block;
+    width: 6em;
     text-align: center;
-    line-height: 0.38in;
+    line-height: 0.4in;
     background-color: var(--paper);
+    opacity: 0.7;
     vertical-align: bottom;
     margin-left: 1px;
-    font-size: 12.5pt;
-    color: var(--ink-soft);
-    transition: background-color 0.15s ease, color 0.15s ease;
+    font-size: 12pt;
+    color: var(--ink);
 }
 
 nav a:first-child {
     margin-left: 0;
-    border-top-left-radius: 3px;
 }
 
-nav a:last-child {
+body:not(.sticky) nav a:last-child {
     border-top-right-radius: 3px;
 }
 
-nav a:hover {
-    color: var(--accent);
-    text-decoration: none;
+body:not(.sticky) nav a:first-child {
+    border-top-left-radius: 3px;
 }
 
 nav a.current {
-    line-height: 0.52in;
-    font-weight: bold;
-    color: var(--accent);
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+    opacity: 1;
     margin-left: 0;
     border-left: 1px solid var(--paper);
     border-right: 1px solid var(--paper);
+}
+
+body:not(.sticky) nav a.current {
+    line-height: 0.55in;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }
 
 nav a.current+a {
@@ -264,13 +265,12 @@ body.sticky nav {
     margin-top: 0;
     z-index: 2;
     background-color: var(--paper);
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 1px 10px #aaa;
 }
 
 body.sticky nav a.current {
     background-color: var(--accent);
     color: var(--paper);
-    line-height: 0.38in;
 }
 
 /* ------------------------------------------------------------
@@ -609,16 +609,17 @@ section.work .design > div {
     }
 
     nav > div {
-        width: 100%;
+        max-width: 96vw;
     }
 
     nav a {
+        width: auto;
+        padding: 0 0.7em;
         font-size: 10.5pt;
         line-height: 0.32in;
-        padding: 0 2px;
     }
 
-    nav a.current {
+    body:not(.sticky) nav a.current {
         line-height: 0.42in;
     }
 
