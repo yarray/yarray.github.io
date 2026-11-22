@@ -147,7 +147,7 @@ Studied the behavioral patterns of VGI contributors.
 
 ## Products {#products}
 
-### Designed and led the development of a cloud-native, AI-native high-performance geographic information platform; released the DeepGlobe software series, one architecture spanning embedded standalone devices to clusters
+### Designed and led the development of the cloud-native, AI-native high-performance geographic information platform HiGIS 2.0; released the DeepGlobe software series, one architecture spanning embedded standalone devices to clusters
 
 - **Unified API standard**: standard-first, one standard with multiple implementations, supporting partial replacement and free composition; a layered resource model of L0 basic spatio-temporal elements plus L1 classic GIS capabilities, where any object can bind spatio-temporal attributes and attached resources, uniformly representing vectors, rasters, trajectories, street views, 3D and other data
 - **Cloud-native architecture**: self-developed high-performance Rust kernel with a microservice architecture; the lightweight server runs in under 100 MB of memory and the whole system runs smoothly in 2 GB; K8s microservices composed on demand with elastic scaling
