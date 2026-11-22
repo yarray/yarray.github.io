@@ -43,7 +43,6 @@ https://github.com/yarray
 
 战略支援部队 助理研究员
 
-<br>
 
 ## 主要工作 {#mainwork}
 
@@ -67,7 +66,6 @@ https://github.com/yarray
 **高性能地理信息平台 HiGIS 1.0 主架构**\
 作为平台的两个主要架构师之一，负责超半数模块的选型与初版研发。两期国家863计划支持总计5500万元，国家科技进步二等奖（2020）
 
-<br>
 
 ## 主要技能 {#skills}
 
@@ -77,7 +75,6 @@ https://github.com/yarray
 - 具备**宽广的知识背景与多样化的地理数据分析能力**，能结合人文领域的背景知识提炼核心问题，运用和研发各类软件工具对假设进行验证
 - 熟练运用各种技术，**坚持一线软件开发**，包括Rust/Python/Typescript/C++/C/Ruby/PostGIS/Docker/MPI/React等
 
-<br>
 
 ## 学术论文 {#pubs}
 
@@ -102,7 +99,6 @@ https://github.com/yarray
 17. 范红超, 孔格菲, & **杨岸然**. (2022). 众源地理信息研究现状与展望. *测绘学报*. [](http://xb.chinasmp.com/article/2022/1001-1595/20220741.htm) **地理学会高质量期刊T1**
 18. Yang, L., Chen, H., **Yang, A.**, & Li, J. (2024). EasySeg: An error-aware domain adaptation framework for remote sensing imagery semantic segmentation via interactive learning and active learning. *IEEE Transactions on Geoscience and Remote Sensing*, 62, 1–18. https://doi.org/10.1109/TGRS.2024.3399260 **中科院一区top**
 
-<br>
 
 ## 承担项目 {#grants}
 
@@ -135,14 +131,12 @@ https://github.com/yarray
 17. 智慧XX系统升级推广，工程项目，**技术负责人**，2020，30万元
 18. XX可视化XX平台，**重大工程**，**主任设计师**，2023-2025, **2000万元**
 
-<br>
 
 ## 学术服务 {#service}
 
 - WSDM 2027 程序委员会委员，**CCF-B**
 - 第四届ISDE数字地球青年创新论坛 分会主席，2026
 
-<br>
 
 ## 荣誉奖项 {#honors}
 
@@ -150,7 +144,6 @@ https://github.com/yarray
 - 天津市滨海新区青年五四奖章，2026
 - 中国测绘学会测绘科学技术进步二等奖（9），2022
 
-<br>
 
 ## 主要产品 {#products}
 
@@ -186,7 +179,6 @@ https://github.com/yarray
 - 科研工作流DSL与执行器raka https://github.com/yarray/raka
 - 个人生活记录移动应用Rhytime
 
-<br>
 
 ## 其它 {#misc}
 

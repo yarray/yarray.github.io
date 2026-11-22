@@ -43,7 +43,6 @@ Academy of Military Science — Assistant Research Fellow
 
 PLA Strategic Support Force — Assistant Research Fellow
 
-<br>
 
 ## Selected Work {#mainwork}
 
@@ -67,7 +66,6 @@ Studying the intrinsic mechanisms and information mining techniques of crowdsour
 **HiGIS 1.0: High-Performance Geographic Information Platform — Co-chief Architect**\
 One of the two chief architects of the platform, responsible for technology selection and initial development of more than half of its modules. Supported by two phases of the National 863 Program with a combined budget of CNY 55M; National Science and Technology Progress Award, 2nd class (2020).
 
-<br>
 
 ## Skills {#skills}
 
@@ -77,7 +75,6 @@ One of the two chief architects of the platform, responsible for technology sele
 - **Broad knowledge background and versatile geodata analysis skills**: distilling core problems with background knowledge from the humanities and validating hypotheses with a wide range of software tools
 - Versatile and **committed to hands-on software development**: Rust/Python/TypeScript/C++/C/Ruby/PostGIS/Docker/MPI/React, etc.
 
-<br>
 
 ## Publications {#pubs}
 
@@ -102,7 +99,6 @@ One of the two chief architects of the platform, responsible for technology sele
 17. Fan, H., Kong, G., & **Yang, A.** (2022). Review and prospects of volunteered geographic information research (in Chinese). *Acta Geodaetica et Cartographica Sinica*. [](http://xb.chinasmp.com/article/2022/1001-1595/20220741.htm) **GSC T1-listed journal**
 18. Yang, L., Chen, H., **Yang, A.**, & Li, J. (2024). EasySeg: An error-aware domain adaptation framework for remote sensing imagery semantic segmentation via interactive learning and active learning. *IEEE Transactions on Geoscience and Remote Sensing*, 62, 1–18. https://doi.org/10.1109/TGRS.2024.3399260 **CAS Q1 (Top)**
 
-<br>
 
 ## Grants & Projects {#grants}
 
@@ -135,14 +131,12 @@ Studied the behavioral patterns of VGI contributors.
 17. Smart XX system upgrade and rollout, engineering project, **technical lead**, 2020, CNY 0.3M
 18. XX visualization XX platform, **major engineering program**, **chief designer**, 2023-2025, **CNY 20M**
 
-<br>
 
 ## Academic Service {#service}
 
 - Program committee member of WSDM 2027, **CCF-B**
 - Session chair, the 4th ISDE Youth Innovation Forum on Digital Earth, 2026
 
-<br>
 
 ## Honors {#honors}
 
@@ -150,7 +144,6 @@ Studied the behavioral patterns of VGI contributors.
 - May 4th Youth Medal of Binhai New Area, Tianjin, 2026
 - Surveying and Mapping Science and Technology Progress Award, 2nd class, Chinese Society for Geodesy, Photogrammetry and Cartography (rank 9), 2022
 
-<br>
 
 ## Products {#products}
 
@@ -186,7 +179,6 @@ Studied the behavioral patterns of VGI contributors.
 - raka, a research workflow DSL and executor — https://github.com/yarray/raka
 - Rhytime, a personal life-logging mobile app
 
-<br>
 
 ## Other {#misc}
 
