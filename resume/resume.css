@@ -56,10 +56,6 @@ hr {
     margin: 0.08in 0;
 }
 
-sub, sup {
-    line-height: 0;
-}
-
 /* ------------------------------------------------------------
    banner & title
    ------------------------------------------------------------ */
@@ -219,7 +215,8 @@ nav a {
     display: inline-block;
     width: 6em;
     text-align: center;
-    line-height: 0.4in;
+    padding: 0.1in 0;
+    line-height: normal;
     background-color: var(--paper);
     opacity: 0.7;
     vertical-align: bottom;
@@ -248,7 +245,7 @@ nav a.current {
 }
 
 body:not(.sticky) nav a.current {
-    line-height: 0.55in;
+    padding-top: 0.16in;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
 }
@@ -271,6 +268,7 @@ body.sticky nav {
 body.sticky nav a.current {
     background-color: var(--accent);
     color: var(--paper);
+    padding-top: 0.1in;
 }
 
 /* ------------------------------------------------------------
@@ -614,45 +612,51 @@ section.work .design > div {
 
     nav a {
         width: auto;
-        padding: 0 0.7em;
+        padding: 0.06in 0.7em;
         font-size: 10.5pt;
-        line-height: 0.32in;
+        line-height: normal;
     }
 
     body:not(.sticky) nav a.current {
-        line-height: 0.42in;
+        padding-top: 0.12in;
     }
 
-    body.sticky nav a.current {
-        line-height: 0.32in;
-    }
-
-    /* keep the works panels on mobile, just scale them down */
+    /* keep the works panels on mobile, stacked and uncropped */
     section.work h2 {
         width: 92vw;
     }
 
     section.work > div {
-        width: 100%;
+        flex-direction: column;
+        width: 92vw;
     }
 
     section.work img {
-        height: 150px;
+        height: auto;
+        max-height: 220px;
+        max-width: 100%;
     }
 
     section.work .higis img, section.work .design img {
-        height: 170px;
+        height: auto;
+        max-height: 200px;
     }
 
     section.work .design {
-        height: 170px;
+        height: auto;
     }
 
-    section.work .oss ul, section.work .higis ul {
-        padding-top: 20px;
-        padding-left: 2em;
-        padding-right: 1.5em;
-        margin-left: 0.5em;
+    section.work .design > div {
+        height: auto;
+    }
+
+    section.work .higis ul, section.work .oss ul {
+        padding: 20px 1.5em;
+        margin: 0.5em 0 0;
+    }
+
+    section.work .higis ul a, section.work .oss ul a {
+        overflow-wrap: anywhere;
     }
 
     .footnote {
