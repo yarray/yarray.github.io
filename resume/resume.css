@@ -6,9 +6,12 @@
     --accent: #a62e20;
     --accent-deep: #7e2216;
     --accent-soft: rgba(166, 46, 32, 0.08);
-    --ink: #2b2b2b;
-    --ink-soft: #555;
+    --ink: #1f1f1f;
+    --ink-body: #3a3a3a;
+    --ink-soft: #5c5c5c;
     --muted: #8a8a8a;
+    --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial,
+        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Source Han Sans SC", sans-serif;
     --paper: #fbfbfb;
     --hairline: #e4e1db;
     --measure: 1440px;
@@ -26,10 +29,13 @@ html {
 
 body {
     background: var(--paper);
-    color: var(--ink);
-    font-family: Verdana, "Microsoft YaHei", "PingFang SC", "Lantinghei SC", "兰亭黑-简", sans-serif;
+    color: var(--ink-body);
+    font-family: var(--font-sans);
     font-size: 16px;
-    line-height: 1.75;
+    line-height: 1.72;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     padding-top: 0;
     margin-top: 0;
 }
@@ -168,7 +174,12 @@ h1 {
 }
 
 .title h1, h2 {
-    font-family: Verdana, "Microsoft YaHei", "FZLTTHK--GBK1-0", "Lantinghei SC", "兰亭黑-简", sans-serif;
+    font-family: var(--font-sans);
+}
+
+strong, b {
+    font-weight: 600;
+    color: var(--ink);
 }
 
 .title em {
@@ -301,28 +312,22 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0.5in 0 0.18in;
-    color: var(--accent);
-    font-size: 19pt;
-    font-weight: bold;
-    line-height: 1.4;
-}
-
-h2:before {
-    content: '';
-    flex: none;
-    height: 0.72em;
-    width: 0.72em;
-    margin-right: 0.36em;
-    background-color: var(--accent);
+    margin: 0.5in 0 0.2in;
+    color: var(--ink);
+    font-size: 1.5rem;
+    font-weight: 650;
+    letter-spacing: 0.01em;
+    line-height: 1.35;
 }
 
 h2:after {
     content: '';
     flex: 0 0 100%;
-    margin-top: 0.3em;
-    height: 1px;
-    background-color: var(--hairline);
+    margin-top: 0.4em;
+    height: 2px;
+    background:
+        linear-gradient(var(--accent), var(--accent)) left top / 2.2em 2px no-repeat,
+        linear-gradient(var(--hairline), var(--hairline)) left bottom / 100% 1px no-repeat;
 }
 
 /* date-column entries: h3 = date on the left, content beside it */
@@ -345,8 +350,10 @@ section.level3 sub {
 
 section.level3 h3 {
     color: var(--muted);
-    font-size: 11pt;
-    font-weight: normal;
+    font-size: 0.875rem;
+    font-weight: 450;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
     margin: 0;
     line-height: 1.75;
 }
@@ -368,8 +375,8 @@ section.level3 h3+* {
     display: block;
     width: 100%;
     color: var(--ink);
-    font-weight: bold;
-    font-size: 12.5pt;
+    font-weight: 600;
+    font-size: 1.05rem;
     margin: 0.32in 0 0.12in;
     padding-left: 10px;
     border-left: 3px solid var(--accent);
@@ -408,8 +415,8 @@ section.level3 h3+* {
 }
 
 h4 {
-    font-size: 12pt;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 600;
     color: var(--ink);
     margin: 0.9em 0 0.15em;
     line-height: 1.6;
@@ -465,13 +472,49 @@ p {
 }
 
 #pubs ol {
-    font-size: 10.5pt;
+    font-size: 0.9rem;
     line-height: 1.65;
 }
 
 #pubs ol li {
-    margin: 0.45em 0;
-    padding-left: 0.25em;
+    margin: 0 0 0.8em;
+    padding-left: 0.35em;
+}
+
+#pubs ol li::marker {
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+}
+
+#pubs li em {
+    color: var(--ink-soft);
+}
+
+html[lang="en"] #pubs li em {
+    font-style: italic;
+}
+
+#pubs li a.uri {
+    color: var(--muted);
+    font-size: 0.88em;
+}
+
+#pubs li a.uri:hover {
+    color: var(--accent);
+}
+
+/* venue-rank labels (bold text after the venue) render as tags */
+#pubs li em ~ strong {
+    display: inline-block;
+    margin: 0 0.15em;
+    padding: 0 0.5em;
+    font-size: 0.8em;
+    line-height: 1.65;
+    font-weight: 600;
+    color: var(--accent-deep);
+    background: var(--accent-soft);
+    border-radius: 4px;
+    white-space: nowrap;
 }
 
 #pubs a, #products a {
@@ -533,7 +576,7 @@ section.work .higis ul, section.work .oss ul {
     padding-top: 50px;
     margin-bottom: 0;
     color: var(--paper);
-    font-family: Verdana, "Microsoft YaHei", "FZLTZHK--GBK1-0", "Lantinghei SC", "兰亭黑-简", sans-serif;
+    font-family: var(--font-sans);
 }
 
 section.work .higis ul li, section.work .oss ul li {
@@ -586,10 +629,6 @@ section.work .design > div {
 @media (min-width: 1800px) {
     body {
         font-size: 17px;
-    }
-
-    h2 {
-        font-size: 20pt;
     }
 }
 
