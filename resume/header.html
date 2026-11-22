@@ -19,8 +19,10 @@ function prop(key, list) {
 function processMisc() {
     var bq = document.querySelector('section.level1 > blockquote');
     var intro = document.querySelector('section.blockquote');
-    bq.parentElement.removeChild(bq);
-    intro.appendChild(bq);
+    if (bq && bq.parentElement && intro) {
+        bq.parentElement.removeChild(bq);
+        intro.appendChild(bq);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
