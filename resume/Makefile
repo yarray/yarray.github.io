@@ -16,7 +16,7 @@ resume-cn.html: index.html
 	cp index.html $@
 
 resume-en.html: $(HTML_DEPS_EN)
-	cat resume.md | pandoc $(COMMON) --template=$(TEMPLATE) -V lang=en -M title="Anran Yang — Resume" -H header.html -B banner-en.html -A work-en.html -A contacts-en.html -A footnote-en.html -o $@
+	cat resume.md | pandoc $(COMMON) --template=$(TEMPLATE) -V lang=en -M title="Anran Yang — Resume" -H header.html -B banner-en.html -A contacts-en.html -A work-en.html -A footnote-en.html -o $@
 
 ifeq ($(OS),Windows_NT)
   # on Windows
