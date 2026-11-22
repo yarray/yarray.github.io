@@ -18,7 +18,7 @@ University of Heidelberg, Germany — academic visit
 ### ^2006.09-2010.07^
 
 Peking University — B.S. in Geographical Information System\
-~Outstanding Graduate, Merit Student, Guanghua Scholarship, GPA ranked 4th in major~
+[Outstanding Graduate, Merit Student, Guanghua Scholarship — GPA ranked 4th in major]{.honors}
 
 ## Work Experience {#experience}
 
@@ -29,7 +29,7 @@ National University of Defense Technology, College of Electronic Science — Ass
 ### ^2020.07-present^
 
 Tianjin Institute of Advanced Technology, Center for Intelligent Ubiquitous Sensing — Deputy Director\
-~Built a 50+ R&D team from scratch; total project funding over CNY 31M~
+[Built a 50+ R&D team from scratch; total project funding over CNY 31M]{.honors}
 
 ### ^2019.08-2022.11^
 
