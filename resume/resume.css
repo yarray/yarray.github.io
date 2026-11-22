@@ -598,7 +598,7 @@ section.work .design > div {
    ------------------------------------------------------------ */
 @media (max-width: 720px) {
     body {
-        padding: 0.3in 0 0;
+        padding: 0;
         width: 100%;
         font-size: 15px;
         margin: 0;
@@ -631,8 +631,19 @@ section.work .design > div {
         margin-bottom: 0;
     }
 
-    .title {
-        height: 285px;
+    /* title fills the banner; nav slabs sit on the banner's bottom edge
+       (absolute, so CJK font metrics can't push them onto the page) */
+    body:not(.sticky) .title {
+        height: 3.5in;
+    }
+
+    body:not(.sticky) nav {
+        position: absolute;
+        top: 3.5in;
+        left: 0;
+        right: 0;
+        margin: 0;
+        transform: translateY(-100%);
     }
 
     .title img {
