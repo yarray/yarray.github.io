@@ -9,3 +9,10 @@ github_username:  yarray
 
 # Build settings
 markdown: kramdown
+
+# resume sources are rendered to HTML by pandoc (resume/Makefile),
+# keep Jekyll from generating .html pages out of them
+exclude:
+  - resume/resume-cn.md
+  - resume/resume.md
+
