@@ -143,7 +143,9 @@ body.sticky .title {
     background-blend-mode: multiply;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    padding: 0.2in 0.35in 0.1in;
+    /* bottom padding is the air above the nav slabs (nav margin must stay
+       0 to keep slab bottoms on the banner's bottom edge) */
+    padding: 0.2in 0.35in 0;
 }
 
 .title img {
@@ -212,8 +214,10 @@ blockquote em {
 nav {
     /* slab bottoms must land exactly on the banner's bottom edge: the white
        current tab then merges seamlessly into the sheet below, while every
-       slab's lower padding still sits on visible banner, not on the page */
-    margin: 0;
+       slab's lower padding still sits on visible banner, not on the page.
+       This margin is the air between the title panel and the tab tops; the
+       panel's own bottom padding is 0 to pay for it (see .title > div) */
+    margin: 0.1in 0 0;
     font-size: 0;
     display: flex;
     flex-direction: column;
