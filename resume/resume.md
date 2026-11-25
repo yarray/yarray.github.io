@@ -37,7 +37,7 @@ National University of Defense Technology, College of Electronic Science — Ass
 
 ### ^2018.01-2019.08^
 
-A research institute — Assistant Research Fellow
+Academy of Military Science — Assistant Research Fellow
 
 
 ## Selected Work {#mainwork}
