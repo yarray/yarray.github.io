@@ -379,31 +379,6 @@ section.level3 h3+* {
     overflow-wrap: break-word;
 }
 
-/* 主要工作: three layers — item title / bold lead / body, all beside the date column */
-#mainwork section.level3 > h3 { grid-row: 1; }
-#mainwork section.level3 > p { grid-column: 2; }
-
-#mainwork section.level3 > p:first-child {
-    font-size: 1.08rem;
-    font-weight: 650;
-    color: var(--ink);
-    line-height: 1.5;
-}
-
-#mainwork section.level3 > p + p {
-    color: var(--ink-soft);
-    font-weight: 400;
-    font-size: 0.95rem;
-    margin-top: 0.2em;
-}
-
-#mainwork section.level3 > p + p > strong:first-child {
-    display: block;
-    color: var(--ink);
-    font-weight: 600;
-    margin-bottom: 0.15em;
-}
-
 /* sections whose h3 is a lead-in line instead of a date column */
 #grants h3, #pubs h3, #products h3 {
     display: block;
