@@ -37,11 +37,7 @@ National University of Defense Technology, College of Electronic Science — Ass
 
 ### ^2018.01-2019.08^
 
-Academy of Military Science — Assistant Research Fellow
-
-### ^2016.12-2018.01^
-
-PLA Strategic Support Force — Assistant Research Fellow
+A research institute — Assistant Research Fellow
 
 
 ## Selected Work {#mainwork}
@@ -106,7 +102,7 @@ One of the two chief architects of the platform, responsible for technology sele
 
 #### 1. 3D XX Computing and XX Visualization, **major engineering program**, **Principal Investigator**, 2024-2025, **CNY 21M+**
 
-As the group lead, coordinated NUDT, Beihang University, the Chinese Academy of Sciences and Hunan University in project justification and implementation; research on 3D spatial environment analysis and visualization in high-fidelity environments.
+As the group lead, coordinated several universities and research institutes in project justification and implementation; research on 3D spatial environment analysis and visualization in high-fidelity environments.
 
 #### 2. Research on VGI Contributor Motivation Based on Contribution History, **NSFC Young Scientists Fund**, Principal Investigator, 2022-2024
 
